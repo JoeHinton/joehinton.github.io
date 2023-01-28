@@ -1,0 +1,162 @@
+/*----------index----------*/
+
+.container {
+  display: flex;
+  flex: 0, 1, 0;
+  flex-direction: row;
+}
+
+.boxOne {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.bullBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(bulletinBoard.jpg);
+  height: 500px;
+}
+
+.info {
+  min-height: 5%;
+  margin-bottom: 0;
+  background-color:linen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: skyblue; 
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #0876f4;
+} 
+
+.button:active {
+  background-color: #87CEEB;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.sticky-note1 {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 200px;
+  height: 150px;
+  background-color: #FFFF00; 
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 10px #888888;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: larger;
+  
+}
+
+.sticky-note2 {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 200px;
+  height: 150px;
+  background-color: #00e1ff; 
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 10px #888888;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: larger;
+  
+}
+
+.sticky-note3 {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 200px;
+  height: 150px;
+  background-color: #b835f5; 
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 10px #888888;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: larger;
+  
+}
+
+.push-pin {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #333;
+  position: absolute;
+  top: -20px; /* or -10px if you want the pin to be half inside the note */
+  left: calc(50% - 10px);
+  transform: rotate(45deg);
+}
+
+
+
+/*-----------access----------*/
+
+.accessContainer {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.accessButtonContainer {
+  display: flex;
+  margin-left: 20%;
+  
+}
+
+.accessButton {
+  background-color: #0a5ff3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: all 0.3s ease-in-out;
+}
+.accessButton:hover {
+  background-color: #15ee05;
+  transform: scale(2.1);
+}
+.accessButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 5px #666;
+  -webkit-box-shadow: 0 5px #666;
+  -moz-box-shadow: 0 5px #666;
+}
+
+
