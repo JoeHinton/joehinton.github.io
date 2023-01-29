@@ -112,7 +112,7 @@
   border-right: 10px solid transparent;
   border-bottom: 20px solid #333;
   position: absolute;
-  top: -20px; /* or -10px if you want the pin to be half inside the note */
+  top: -20px; 
   left: calc(50% - 10px);
   transform: rotate(45deg);
 }
@@ -122,19 +122,38 @@
 /*-----------access----------*/
 
 .accessContainer {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
+  flex: 1;
+
 }
 
-.accessButtonContainer {
+.accessRight {
   display: flex;
-  margin-left: 20%;
+  flex-direction: column;
+}
+
+.note {
+  flex-direction: row;
+  padding: 10px;
+  font-size: x-large;
+  background-color:bisque;
+  font-style: oblique;
+  height: 15%;
+  /*margin-bottom is the button's distance from the ntoe*/
+  margin-bottom: 400px;
+  border-radius: 5px;
+  
   
 }
 
+.buttDiv {
+  margin-left: 40%;
+}
+
 .accessButton {
-  background-color: #0a5ff3; /* Green */
+  margin-top: 200px;
+  background-color: #0a5ff3;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -147,6 +166,8 @@
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   transition: all 0.3s ease-in-out;
+  
+  
 }
 .accessButton:hover {
   background-color: #15ee05;
