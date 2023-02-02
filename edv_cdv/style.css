@@ -1,3 +1,20 @@
+
+
+/*Global*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+body {
+  overflow: auto;
+}
+
+
+
 /*----------index----------*/
 
 .container {
@@ -23,6 +40,7 @@
 .info {
   min-height: 5%;
   margin-bottom: 0;
+  padding: 10px 0 10px 0px;
   background-color:linen;
   display: flex;
   flex-direction: row;
@@ -105,18 +123,6 @@
   
 }
 
-.push-pin {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 20px solid #333;
-  position: absolute;
-  top: -20px; 
-  left: calc(50% - 10px);
-  transform: rotate(45deg);
-}
-
 
 
 /*-----------access----------*/
@@ -140,7 +146,7 @@
   background-color:bisque;
   font-style: oblique;
   height: 15%;
-  /*margin-bottom is the button's distance from the ntoe*/
+  /*margin-bottom is the button's distance from the note*/
   margin-bottom: 400px;
   border-radius: 5px;
   
@@ -219,7 +225,23 @@
   border: pink 1px solid;
 }
 
-.accessButtons button {
+.badges p {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0;
   background-color: #009dff;
   width: 200px;
 }
+
+
+.badgePhoto img {
+  height: 150px;
+  width: 105px;
+}
+
+
+
+
