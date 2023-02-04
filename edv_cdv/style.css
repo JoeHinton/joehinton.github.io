@@ -10,9 +10,35 @@ html, body {
 
 body {
   overflow: auto;
-  background-image: url(bg.png);
+  background-image: url(MalcomX.jpg);
+  background-color: black;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*-----Return to index button-----*/
+.buttDiv {
+  position: absolute;
+  top: 900px;
+  right: 200px;
+}
+
+.accessButton {
+  margin-top: 200px;
+  background-color: #0a5ff3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -44,9 +70,8 @@ body {
   margin-bottom: 0;
   padding: 10px 0 10px 0px;
   /*
-  background-color:rgb(211, 126, 40);
+  background-color: black;
   */
-  background-image: url(bg.png);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -65,7 +90,7 @@ body {
   background-color: skyblue; 
   border: none;
   border-radius: 15px;
-  box-shadow: 4px 4px skyblue;
+ 
 }
 
 .button:hover {background-color: #0876f4;
@@ -158,33 +183,7 @@ body {
   
 }
 
-.buttDiv {
-  /*
-  margin-left: 15%;
-  */
-  position: absolute;
-  top: 900px;
-  right: 200px;
-}
-
-.accessButton {
-  margin-top: 200px;
-  background-color: #0a5ff3;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  transition: all 0.3s ease-in-out;
   
-  
-}
 .accessButton:hover {
   background-color: #15ee05;
   transform: scale(2.1);
@@ -266,12 +265,6 @@ body {
 .fbContainer {
 display: flex;
 width: 100%;
-align-content: center;
-justify-content: center;
+justify-content: flex-start;
+margin-left: 12%
 }
-
-
-
-
-
-
