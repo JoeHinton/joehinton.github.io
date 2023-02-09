@@ -177,7 +177,7 @@ body {
 
 .note {
   flex-direction: row;
-  padding: 5px;
+  padding: 0 5px 30px 5px;
   font-size: x-large;
   background-color:rgba(242, 207, 164, 0.901);
   font-style: oblique;
