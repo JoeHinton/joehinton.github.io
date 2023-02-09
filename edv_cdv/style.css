@@ -10,7 +10,7 @@ html, body {
 
 body {
   overflow: auto;
-  background-image: url(MalcomX.jpg);
+  background-image: url(backgrounds/spirit/blackHistoryMonth/MalcomX.jpg);
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,6 +152,7 @@ body {
   font-size: larger;
   
 }
+
 
 
 
