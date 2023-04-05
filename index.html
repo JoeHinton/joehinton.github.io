@@ -1,60 +1,50 @@
-<!--link css/js files-->
-<!--create content for main section-->
-<!--create content for footer section-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Joe's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Project Directory</title>
 </head>
 <body>
 
-<!--header is a global element-->
-  <header>
-    <nav>
-      <button onclick="window.location.href='index.html'">Home</button>
-      <button onclick="window.location.href='about.html'">About Me</button>
-      <button onclick="window.location.href='portfolio.html'">Portfolio</button>
-    </nav>
-  </header>
+  <h1>Fullstack Project Directory</h1>
 
-<!--image for li is a placeholder. images will link to external pages-->
-  <main class="mainIndex">
-    <h1>Welcome To My Website</h1>
-    <ul>
-      <li>
-        <a href="#">
-          <img class="indexImage" src="img/photo1.jpg">
-        </a>
-      </li>
+  <select onchange="window.location.href=this.value;">
 
-      <li>
-        <a href="#">
-          <img class="indexImage" src="img/photo1.jpg">
-        </a>
-      </li>
+    <option value="#">Block01</option>
+    <option value="fullstack/block01/firstWebsite/index.html">-First Website</option>
+    <option value="fullstack/block01/hackingGoogle/index.html">-Hacking Google</option>
 
-      <li>
-        <a href="#">
-          <img class="indexImage" src="img/photo1.jpg">
-        </a>
-      </li>
+    <option value="#">Block02</option>
+    <option value="fullstack/block02/index.html">-Navigating The GUI</option>
 
+    <option value="#">Block03</option>
+    <option value="fullstack/block03/index.html">-Navigating The CLI</option>
+  
+    <option value="#">Block04</option>
+    <option value="fullstack/block04/index.html">-GitHub Workflow</option>
+  
+    <option value="#">Block05</option>
+    <option value="fullstack/block05/index.html">-The Zoo Problem</option>
 
-    </ul>
-    <p id="secret">
-      <a href="#">You've Found The Hidden Link!</a>
-    </p>
-  </main>
+    <option value="#">Block06</option>
+    <option value="fullstack/block06/index.html">-Grocery  List</option>
 
-<!--footer is a global element-->
-  <footer>
-    <h6>This is the footer</h6>
-  </footer>
-  <script src="javascript.js"></script>
+    <option value="#">Block07</option>
+    <option value="fullstack/block07/index.html">-Secure The Vault</option>
+  
+    <option value="#">Block08</option>
+    <option value="fullstack/block08/index.html">-Team Practice</option>
+
+    <option value="#">Block09</option>
+    <option value="fullstack/block09/index.html">-Unit 1 Career Simulation: Personal Website Pt I</option>
+  
+    <option value="#">Block10</option>
+    <option value="fullstack/block10/index.html">-The Picasso Painting</option>
+
+  </select>
+
 </body>
 </html>
